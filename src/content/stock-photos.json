@@ -1,0 +1,17 @@
+{
+  "tulum-palms": {
+    "src": "/photos/tulum-palms.jpg",
+    "width": 2400,
+    "height": 1600
+  },
+  "hotel-aerial-hq": {
+    "src": "https://images.trvl-media.com/lodging/19000000/18340000/18336000/18335979/162ba860.jpg",
+    "width": 2880,
+    "height": 1617
+  },
+  "hotel-canal": {
+    "src": "https://images.trvl-media.com/lodging/19000000/18340000/18336000/18335979/9102c4f2.jpg",
+    "width": 3840,
+    "height": 2561
+  }
+}
