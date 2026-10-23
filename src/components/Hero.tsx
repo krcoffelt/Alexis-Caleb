@@ -18,9 +18,9 @@ export function Hero() {
           className="pointer-events-none absolute inset-0 z-10 bg-[linear-gradient(180deg,rgba(23,52,52,0.32)_0%,rgba(23,52,52,0)_26%,rgba(23,52,52,0)_42%,rgba(23,52,52,0.55)_100%)]"
         />
 
-        <div className="relative z-10 mt-auto flex flex-col items-center px-5 pt-32 pb-8 text-center sm:px-10 sm:pb-10">
+        {/* optical centre: CA + names float in the middle of the water */}
+        <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-5 pt-24 pb-10 text-center sm:px-10 sm:pt-24">
           <Monogram size="clamp(3.6rem, 2.4rem + 3.4vw, 6rem)" className="drop-shadow-[0_2px_16px_rgba(20,50,50,0.35)]" />
-
           <h1
             id="hero-title"
             className="mt-6 font-display leading-[0.95] tracking-[-0.03em] [text-shadow:0_2px_30px_rgba(20,50,50,0.25)] sm:mt-8 sm:whitespace-nowrap"
@@ -31,9 +31,12 @@ export function Hero() {
               <span className="font-accent italic">&amp;</span> Caleb
             </span>
           </h1>
+        </div>
 
-          <div className="mt-7 w-full max-w-[1080px] border-t border-white/35 pt-5 sm:mt-9 sm:pt-6">
-            <p className="flex flex-col items-center gap-2 text-[12px] font-medium tracking-[0.24em] uppercase sm:flex-row sm:justify-center sm:gap-6 sm:text-[13px]">
+        {/* essentials pinned along the bottom edge */}
+        <div className="relative z-10 mx-auto w-full max-w-[1080px] px-5 pb-7 sm:px-10 sm:pb-9">
+          <div className="border-t border-white/35 pt-5 sm:pt-6">
+            <p className="flex flex-col items-center gap-2 text-center text-[12px] font-medium tracking-[0.24em] uppercase sm:flex-row sm:justify-center sm:gap-6 sm:text-[13px]">
               <time dateTime="2027-05-11">{site.date.long}</time>
               <Sparkle size={10} className="hidden text-white/70 sm:block" />
               <span>{site.venue.name}</span>

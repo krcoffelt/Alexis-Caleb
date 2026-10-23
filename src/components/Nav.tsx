@@ -28,21 +28,21 @@ export function Nav() {
   }, [open]);
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4 sm:pt-5">
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4 sm:pt-6">
       <nav
         aria-label="Main"
-        className="pointer-events-auto relative w-full max-w-[34rem] rounded-[14px] bg-white/95 p-1.5 shadow-[0_8px_30px_rgba(37,37,37,0.08)] ring-1 ring-black/[0.04] backdrop-blur md:w-auto md:max-w-none"
+        className="pointer-events-auto relative w-full max-w-[36rem] rounded-[18px] bg-white/95 p-2 shadow-[0_8px_30px_rgba(37,37,37,0.08)] ring-1 ring-black/[0.04] backdrop-blur md:w-auto md:max-w-none"
       >
         <div className="flex items-center justify-between gap-2 md:gap-1">
-          <Link href="/" className="flex h-10 items-center rounded-[10px] px-3 text-ink" aria-label="Home — Alexis & Caleb">
-            <Monogram size="1.15rem" decorative />
+          <Link href="/" className="flex h-12 items-center rounded-[12px] px-4 text-ink" aria-label="Home — Alexis & Caleb">
+            <Monogram size="1.45rem" decorative />
           </Link>
           <ul className="hidden items-center md:flex">
             {links.map((l) => (
               <li key={l.href}>
                 <Link
                   href={l.href}
-                  className="flex h-10 items-center rounded-[10px] px-3.5 text-[13px] font-medium tracking-[-0.01em] text-ink transition-colors hover:bg-paper"
+                  className="flex h-12 items-center rounded-[12px] px-4 text-[15px] font-medium tracking-[-0.01em] text-ink transition-colors hover:bg-paper"
                 >
                   {l.label}
                 </Link>
@@ -52,14 +52,14 @@ export function Nav() {
           <div className="flex items-center gap-1.5">
             <Link
               href="/rsvp"
-              className="flex h-10 items-center rounded-[10px] btn-gold px-4 text-[14px] font-medium tracking-[-0.01em] md:ml-3"
+              className="flex h-12 items-center rounded-[12px] btn-gold px-6 text-[15px] font-medium tracking-[-0.01em] md:ml-4"
             >
               Submit RSVP
             </Link>
             <button
               ref={toggleRef}
               type="button"
-              className="flex h-10 w-11 items-center justify-center rounded-[10px] text-ink hover:bg-paper md:hidden"
+              className="flex h-12 w-12 items-center justify-center rounded-[12px] text-ink hover:bg-paper md:hidden"
               aria-expanded={open}
               aria-controls="mobile-menu"
               aria-label={open ? "Close menu" : "Open menu"}
