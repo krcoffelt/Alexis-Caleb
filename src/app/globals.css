@@ -8,7 +8,7 @@
   --color-note: #f3eadd;
   --color-sand: #e6d7c3;
   --color-pill: #eae1d5;
-  /* Ink — warm espresso rather than neutral black */
+  /* Ink: warm espresso rather than neutral black */
   --color-ink: #2e2823;
   --color-ink-soft: #5c5048;
   --color-ink-mute: #776a60;
@@ -82,10 +82,10 @@ body {
   color: var(--color-ink);
 }
 
-/* Paper grain — subtle fractal noise, no image request */
+/* Paper grain: subtle fractal noise, no image request */
 .grain {
   position: relative;
-  /* noise multiplies over the element's own background colour — no extra
+  /* noise multiplies over the element's own background colour, with no extra
      composited layer or blend-mode pseudo, which flickers on mobile Safari */
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .38  0 0 0 0 .3  0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
   background-blend-mode: multiply;

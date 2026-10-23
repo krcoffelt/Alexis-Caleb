@@ -20,7 +20,7 @@ export function Monogram({ size = "6rem", subtitle = false, className = "", deco
       className={`inline-flex flex-col items-center leading-none ${className}`}
       aria-hidden={decorative || undefined}
       role={decorative ? undefined : "img"}
-      aria-label={decorative ? undefined : `CA — ${site.couple.monogramSubtitle}`}
+      aria-label={decorative ? undefined : `CA monogram, ${site.couple.monogramSubtitle}`}
     >
       <svg viewBox={CA_VIEWBOX} style={{ height: size, width: `calc(${size} * ${CA_RATIO})` }} aria-hidden="true">
         <path d={CA_PATH} fill="currentColor" fillRule="evenodd" />

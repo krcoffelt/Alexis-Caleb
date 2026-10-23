@@ -77,7 +77,7 @@ export function Envelope() {
           className="group relative block aspect-[736/776] w-full cursor-pointer rounded-[6px] focus-visible:outline-offset-8"
         >
           <span className="sr-only">
-            {open ? "Tuck the invitation back in" : "Open the invitation"} — {site.couple.displayName}, {site.date.long},{" "}
+            {open ? "Tuck the invitation back in" : "Open the invitation"}: {site.couple.displayName}, {site.date.long},{" "}
             {site.venue.name}
           </span>
 
@@ -146,7 +146,7 @@ export function Envelope() {
         {(["days", "hours", "minutes"] as const).map((k) => (
           <div key={k} className="flex min-w-[96px] flex-col-reverse items-center px-5 sm:min-w-[120px] sm:px-8">
             <dt className="mt-2 text-[11px] font-medium tracking-[0.2em] text-ink-mute uppercase">{k}</dt>
-            <dd className="font-accent text-[44px] leading-none text-ink tabular-nums sm:text-[56px]">{c ? c[k] : "—"}</dd>
+            <dd className="font-accent text-[44px] leading-none text-ink tabular-nums sm:text-[56px]">{c ? c[k] : "·"}</dd>
           </div>
         ))}
       </dl>

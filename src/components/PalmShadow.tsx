@@ -1,5 +1,5 @@
 /**
- * Soft, blurred palm-frond shadows — sunlight through palms falling across
+ * Soft, blurred palm-frond shadows: sunlight through palms falling across
  * the paper. Procedurally drawn so no image is needed. Decorative.
  */
 

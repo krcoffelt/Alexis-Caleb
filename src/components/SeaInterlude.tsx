@@ -4,7 +4,7 @@ import { site } from "@/content/site";
 import { LoopVideo } from "./LoopVideo";
 import { Waves } from "./Waves";
 
-/** Full-bleed aerial shoreline band — the tropical breath between logistics and photos. */
+/** Full-bleed aerial shoreline band: the tropical breath between logistics and photos. */
 export function SeaInterlude() {
   return (
     <section aria-labelledby="sea-title" className="relative isolate overflow-hidden text-white">
@@ -29,7 +29,7 @@ export function SeaInterlude() {
             See you by <span className="font-accent italic">the</span> sea
           </h2>
           <p className="mt-6 max-w-[40ch] text-[17px] leading-[1.6] font-medium text-white/90">
-            Three days of sun, sea and celebration on the Caribbean coast — May 9 to 11, 2027.
+            Three days of sun, sea and celebration on the Caribbean coast, from May 9 to 11, 2027.
           </p>
           <Link
             href="/#stay"

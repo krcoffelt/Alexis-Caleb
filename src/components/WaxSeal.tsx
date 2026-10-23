@@ -18,7 +18,7 @@ const beads = Array.from({ length: 28 }, (_, i) => {
 /**
  * A poured-and-pressed wax seal: displaced organic rim with diffuse and
  * specular lighting, a debossed stamp face, bead ring and a CA (or icon)
- * impression. Decorative — always hidden from assistive tech.
+ * impression. Decorative, so always hidden from assistive tech.
  */
 export function WaxSeal({
   size = 64,

@@ -34,7 +34,7 @@ export function Nav() {
         className="pointer-events-auto relative w-full max-w-[36rem] rounded-[18px] bg-white/95 p-2 shadow-[0_8px_30px_rgba(37,37,37,0.08)] ring-1 ring-black/[0.04] backdrop-blur md:w-auto md:max-w-none"
       >
         <div className="flex items-center justify-between gap-2 md:gap-1">
-          <Link href="/" className="flex h-12 items-center rounded-[12px] px-4 text-ink" aria-label="Home — Alexis & Caleb">
+          <Link href="/" className="flex h-12 items-center rounded-[12px] px-4 text-ink" aria-label="Home, Caleb & Alexis">
             <Monogram size="1.45rem" decorative />
           </Link>
           <ul className="hidden items-center md:flex">

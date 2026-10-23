@@ -1,4 +1,4 @@
-/** Gold rule — rosette — rule, set under section titles like an invitation. */
+/** Gold rule, rosette and rule, set under section titles like an invitation. */
 export function Flourish({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 220 24" width="180" height="20" aria-hidden="true" className={`mx-auto block text-gold ${className}`}>

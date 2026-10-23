@@ -88,7 +88,7 @@ export function RsvpForm() {
       setStatus("error");
       setMessage(
         err instanceof TypeError
-          ? "We couldn’t reach the server. Check your connection and try again — your RSVP has not been sent."
+          ? "We couldn’t reach the server. Check your connection and try again. Your RSVP has not been sent."
           : (err as Error).message,
       );
     }
@@ -104,7 +104,7 @@ export function RsvpForm() {
         <p className="mx-auto mt-4 max-w-[34ch] text-[16px] leading-[1.6] font-medium text-ink-soft">
           {attending === "yes"
             ? `We’ve saved ${guests === 1 ? "1 guest" : `${guests} guests`}. Next step: reserve your room with our booking coordinator.`
-            : "Thank you for letting us know — you’ll be with us in spirit."}
+            : "Thank you for letting us know. You’ll be with us in spirit."}
         </p>
         <div className="mt-8 flex flex-col items-center gap-3">
           {attending === "yes" && (

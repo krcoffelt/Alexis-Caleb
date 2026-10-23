@@ -18,7 +18,7 @@ function Rosette({ x, y, r = 16 }: { x: number; y: number; r?: number }) {
   );
 }
 
-/** Arched, gold-lined frame with Talavera rosettes — replaces Weddingly's baroque frame. */
+/** Arched, gold-lined frame with Talavera rosettes, replacing Weddingly's baroque frame. */
 function ArchFrame() {
   return (
     <svg viewBox="0 0 400 580" className="paper-layer absolute inset-0 h-full w-full drop-shadow-[0_30px_50px_rgba(10,30,30,0.35)]" aria-hidden="true">

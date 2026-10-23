@@ -42,7 +42,7 @@ export default function OurStory() {
             <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_45%,rgba(0,0,0,0.45)_100%)]" />
             <div className="w-full px-6 pb-8 sm:px-10 sm:pb-10">
               <p className="flex items-center gap-3 text-[18px] font-medium tracking-[-0.02em] sm:text-[22px]">
-                Spring 2021 — today <span aria-hidden="true" className="h-px w-8 bg-white/80" />
+                Since spring 2021 <span aria-hidden="true" className="h-px w-8 bg-white/80" />
               </p>
               <h1
                 id="story-page-title"

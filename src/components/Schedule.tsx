@@ -18,13 +18,13 @@ export function Schedule() {
           </h2>
           <Flourish className="mt-5" />
           <p className="mx-auto mt-5 max-w-[46ch] text-[16px] leading-[1.6] font-medium text-ink-soft">
-            Everything takes place at {site.venue.name}. More details to come — we’ll update this page as plans are
+            Everything takes place at {site.venue.name}. More details are coming soon, and we’ll update this page as plans are
             finalized.
           </p>
         </header>
 
         <ol className="relative mt-16 sm:mt-20">
-          {/* centre rule — fills as you scroll */}
+          {/* centre rule, which fills as you scroll */}
           <ScrollLine className="left-[19px] -translate-x-1/2 sm:left-1/2" />
           {schedule.map((e, i) => {
             const flip = i % 2 === 1;

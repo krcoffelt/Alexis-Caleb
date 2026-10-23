@@ -46,7 +46,7 @@ const rows: Row[] = [
     body: (
       <>
         <p>
-          There are a few different hotels on the resort grounds — we are staying at <strong className="font-semibold text-ink">{site.venue.name}</strong>!
+          There are a few different hotels on the resort grounds, and we are staying at <strong className="font-semibold text-ink">{site.venue.name}</strong>!
         </p>
         <p>
           We’ve set up guest accommodations through our booking coordinator, <strong className="font-semibold text-ink">{site.booking.coordinator}</strong>. Please reserve a room through her and she will get you all set up.
@@ -77,7 +77,7 @@ const rows: Row[] = [
       <>
         <p>
           You can set up a payment plan with {site.booking.coordinator}. The deadline for payment plans is{" "}
-          <strong className="font-semibold text-ink">{site.booking.paymentPlanDeadline}</strong> — don’t wait until the last minute!
+          <strong className="font-semibold text-ink">{site.booking.paymentPlanDeadline}</strong>. Don’t wait until the last minute!
         </p>
       </>
     ),
@@ -101,7 +101,7 @@ const rows: Row[] = [
           {["May 7", "May 14"].map((d) => (
             <div key={d} className="flex items-center justify-between py-2.5">
               <dt className="font-semibold text-ink">{d}</dt>
-              <dd>6:00 AM – 11:00 PM</dd>
+              <dd>6:00 AM to 11:00 PM</dd>
             </div>
           ))}
         </dl>
@@ -123,7 +123,7 @@ const rows: Row[] = [
           <strong className="font-semibold text-ink">beach formal</strong> for the guys.
         </p>
         <p>
-          The ceremony and reception will be outdoors, weather permitting, and there may be some uneven ground — please
+          The ceremony and reception will be outdoors, weather permitting, and there may be some uneven ground, so please
           leave the stilettos at home and go for block heels or sandals instead.
         </p>
       </>

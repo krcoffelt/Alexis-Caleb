@@ -27,7 +27,7 @@ export const site = {
     // CONFIRM: contactId parameter is blank in the source link.
     url: "https://booking.destinationweddings.com/attend/event?eventId=949610&contactId=",
     paymentPlanDeadline: "January 26, 2027", // CONFIRM with coordinator
-    dayPass: "$150–$200 per day pass", // CONFIRM currency / eligibility
+    dayPass: "$150 to $200 per day pass", // CONFIRM currency / eligibility
   },
   registry: {
     // CONFIRM: hydrated Joy CTA. An older Honeyfund link also exists.
@@ -94,7 +94,7 @@ export const milestones = [
     when: "Spring 2021 · San Antonio",
     photo: "met-close",
     photoAlt: "Caleb holding Alexis's face as she smiles",
-    body: "Caleb took a contract in San Antonio and we were working the same job — he was head of security, I was in the medical tent. His first words about Texas: “It’s hot as hell here.”",
+    body: "Caleb took a contract in San Antonio and we were working the same job. He was head of security, and I was in the medical tent. His first words about Texas: “It’s hot as hell here.”",
   },
   {
     n: 2,
@@ -102,7 +102,7 @@ export const milestones = [
     when: "Señor Fish · San Antonio",
     photo: "first-date",
     photoAlt: "Alexis and Caleb laughing together",
-    body: "Caleb ordered oysters — little did I know it was his first time trying them! We spent hours talking, and that day became the stepping stone for where we are today.",
+    body: "Caleb ordered oysters, and little did I know it was his first time trying them! We spent hours talking, and that day became the stepping stone for where we are today.",
   },
   {
     n: 3,
@@ -110,7 +110,7 @@ export const milestones = [
     when: "Venice, Italy",
     photo: "venice-ring",
     photoAlt: "Alexis's hand with her engagement ring",
-    body: "Italy will always have a special place in our hearts. Surrounded by some of the people closest to us, our trip ended with our engagement in Venice — beautiful, dreamy and so present.",
+    body: "Italy will always have a special place in our hearts. Surrounded by some of the people closest to us, our trip ended with our engagement in Venice. It was beautiful, dreamy and so present.",
   },
 ];
 
@@ -135,7 +135,7 @@ export const storyQA = [
   {
     q: "Who initiated the first kiss?",
     a: [
-      "Caleb — he kissed me on his way back to his hotel after our first group date. I was not expecting it but it was sooo romantic, and I was blushing so hard I remember the bouncers laughing at me!",
+      "Caleb! He kissed me on his way back to his hotel after our first group date. I was not expecting it but it was sooo romantic, and I was blushing so hard I remember the bouncers laughing at me!",
     ],
   },
   {
@@ -146,11 +146,11 @@ export const storyQA = [
   },
   {
     q: "What’s your favorite thing to do together?",
-    a: ["We both LOVE the outdoors — fishing is our favorite hobby, and going on a new foodie adventure is our go-to!"],
+    a: ["We both LOVE the outdoors! Fishing is our favorite hobby, and going on a new foodie adventure is our go-to!"],
   },
   {
     q: "Where are you going for your honeymoon?",
-    a: ["We’re undecided — our priority is putting love into our home and preparing to start our own family!"],
+    a: ["We’re undecided. Our priority is putting love into our home and preparing to start our own family!"],
   },
   {
     q: "What’s the best meal you’ve shared together?",
@@ -171,17 +171,17 @@ export const faqs: { q: string; a: string }[] = [
   { q: "Can I bring a date?", a: "All guests are allowed a +1." },
   {
     q: "Are kids welcome?",
-    a: "We love your little ones, but the ceremony and reception are adults-only — with the exception of our daughter and her cousins.",
+    a: "We love your little ones, but the ceremony and reception are adults-only, with the exception of our daughter and her cousins.",
   },
   { q: "What’s the dress code?", a: "Funky formal for the ladies and beach formal for the guys." },
   {
     q: "What kind of shoes should I wear (or skip)?",
-    a: "Ladies, please leave the stilettos at home — seriously! There might be some uneven ground, so go for block heels or sandals instead. We don’t want anyone ruining their shoes or twisting an ankle!",
+    a: "Ladies, please leave the stilettos at home. Seriously! There might be some uneven ground, so go for block heels or sandals instead. We don’t want anyone ruining their shoes or twisting an ankle!",
   },
   { q: "Is the wedding indoors or outdoors?", a: "The ceremony and reception will be outdoors, weather permitting." },
   {
     q: "What’s the weather like?",
-    a: "Welcome to Mexico! Expect warm, tropical weather — usually 80–90°F — with the possibility of a quick rain shower. Evenings are comfortable, usually 70–75°F. We recommend lightweight clothes, sunscreen, and a little patience for the humidity. ;)",
+    a: "Welcome to Mexico! Expect warm, tropical weather, usually 80 to 90°F, with the possibility of a quick rain shower. Evenings are comfortable, usually 70 to 75°F. We recommend lightweight clothes, sunscreen, and a little patience for the humidity. ;)",
   },
   {
     q: "Can we take photos during the wedding?",
