@@ -1,6 +1,6 @@
 # Alexis & Caleb — wedding website
 
-Next.js 15 + Tailwind 4 + TypeScript, Supabase for RSVPs. Layout follows the
+Next.js 15 + Tailwind 4 + TypeScript, deployed on Netlify with Netlify Forms for RSVPs. Layout follows the
 bride-selected Weddingly (Olivia & Daniel) rhythm, recolored to one warm
 palette (sand + clay + gold linework) with sea-glass from the hero water.
 
@@ -19,19 +19,25 @@ still need the couple's sign-off.
 - `/` — hero (ocean video + CA), save-the-date envelope, story, schedule, venue,
   guest info, photos, registry, RSVP invite, Q&A
 - `/our-story` — full story Q&A
-- `/rsvp` — one-step Full Name + Yes/No
-- `/responses` — private, passcode-protected, phone-friendly response list + CSV
+- `/rsvp` — one step: Yes/No, number of guests (if Yes), full name, phone/WhatsApp
 
-## RSVP storage (Supabase)
+## RSVPs (Netlify Forms)
 
-1. Create a Supabase project and run `supabase/migrations/20261023000000_rsvps.sql`.
-   RLS is on with no policies, so the public key can't read or write.
-2. Copy `.env.example` to `.env.local` and set `SUPABASE_URL`,
-   `SUPABASE_SERVICE_ROLE_KEY` (server only) and `RSVP_ADMIN_PASSCODE`.
+The form posts to Netlify Forms. `public/__forms.html` is the static copy Netlify
+reads at deploy time to register the `rsvp` form (fields: attending, guests,
+name, phone; `company` is a spam honeypot) — keep it in sync with
+`src/components/RsvpForm.tsx`.
 
-Without Supabase, `npm run dev` stores test responses in `.data/rsvps.json`;
-production refuses submissions (503) rather than pretending they were saved.
-`.env.local` currently holds a generated local-only passcode for testing.
+After the first deploy:
+
+1. Netlify → Site → **Forms** → enable form detection if prompted, then redeploy.
+   The `rsvp` form should appear.
+2. **Site configuration → Forms → Form notifications → Add notification →
+   Email notification**: event "New form submission", form `rsvp`, email
+   `krcoffelt@gmail.com`.
+
+Submissions (with CSV export) live under Forms → rsvp. Netlify Forms only works
+on the deployed site or `netlify dev`, not plain `npm run dev`.
 
 ## Media
 

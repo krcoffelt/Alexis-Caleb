@@ -139,18 +139,55 @@ body {
   mask-size: 100% 100%;
 }
 
-/* Papel picado flags sway gently on their string */
-.papel-flag {
-  transform-box: fill-box;
-  transform-origin: 50% 0;
-  animation: papel-sway 5.5s ease-in-out infinite alternate;
+/* Papel picado: a gust travels down the string while each flag lifts and
+   billows from its top edge. Pure transforms on their own layers. */
+.papel-stage {
+  width: max(100%, 922px);
 }
-@keyframes papel-sway {
-  from {
-    transform: rotate(-2.5deg) skewX(1deg);
+@media (min-width: 640px) {
+  .papel-stage {
+    width: max(100%, 1440px);
   }
-  to {
-    transform: rotate(2.5deg) skewX(-1deg);
+}
+.papel-swing {
+  transform-origin: 50% 0;
+  will-change: transform;
+  animation: papel-swing 3.3s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+@keyframes papel-swing {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  35% {
+    transform: rotate(6.5deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(4.5deg);
+  }
+}
+.papel-flutter {
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  will-change: transform;
+  animation: papel-flutter 1.5s ease-in-out infinite;
+}
+@keyframes papel-flutter {
+  0%,
+  100% {
+    transform: rotateX(4deg) rotateY(0deg) skewX(0deg);
+  }
+  22% {
+    transform: rotateX(26deg) rotateY(-7deg) skewX(-3deg);
+  }
+  45% {
+    transform: rotateX(10deg) rotateY(4deg) skewX(2deg);
+  }
+  70% {
+    transform: rotateX(30deg) rotateY(-4deg) skewX(-2deg);
   }
 }
 
@@ -173,8 +210,7 @@ body {
   animation: palm-sway 9s ease-in-out infinite alternate;
 }
 @media (max-width: 767px) {
-  .palm-sway,
-  .papel-flag {
+  .palm-sway {
     animation: none;
   }
 }

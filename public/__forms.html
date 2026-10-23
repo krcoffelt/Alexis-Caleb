@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!--
+      Netlify Forms detection file. Netlify reads this at deploy time to register
+      the "rsvp" form; the real form (src/components/RsvpForm.tsx) posts here.
+      Keep the field names in sync with the component.
+    -->
+    <form name="rsvp" data-netlify="true" netlify-honeypot="company" hidden>
+      <input type="hidden" name="form-name" value="rsvp" />
+      <input type="text" name="attending" />
+      <input type="text" name="guests" />
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="text" name="company" />
+    </form>
+  </body>
+</html>

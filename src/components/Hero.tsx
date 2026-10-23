@@ -11,7 +11,9 @@ import { Sparkle } from "./WaxSeal";
 export function Hero() {
   return (
     <section aria-labelledby="hero-title" className="p-2.5 sm:p-3">
-      <div className="relative isolate flex min-h-[calc(100svh-20px)] flex-col overflow-hidden rounded-[18px] text-white sm:rounded-[22px]">
+      {/* clip-path as well as border-radius: iOS Safari ignores the radius on an
+          overflow-hidden box once a <video> inside it gets its own GPU layer */}
+      <div className="relative isolate flex min-h-[calc(100svh-20px)] flex-col overflow-hidden rounded-[18px] text-white [clip-path:inset(0_round_18px)] sm:rounded-[22px] sm:[clip-path:inset(0_round_22px)]">
         <OceanVideo />
         <div
           aria-hidden="true"

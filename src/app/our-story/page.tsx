@@ -30,7 +30,7 @@ export default function OurStory() {
       <Nav />
       <main id="main">
         <section aria-labelledby="story-page-title" className="p-2.5 sm:p-3">
-          <div className="relative isolate flex min-h-[78svh] items-end overflow-hidden rounded-[18px] text-white sm:rounded-[22px]">
+          <div className="relative isolate flex min-h-[78svh] items-end overflow-hidden rounded-[18px] text-white [clip-path:inset(0_round_18px)] sm:rounded-[22px] sm:[clip-path:inset(0_round_22px)]">
             <Photo
               slug="grass-lying"
               alt="Alexis and Caleb lying together in a green field"
