@@ -20,15 +20,15 @@ export function Hero() {
 
         {/* optical centre: CA + names float in the middle of the water */}
         <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-5 pt-24 pb-10 text-center sm:px-10 sm:pt-24">
-          <Monogram size="clamp(3.6rem, 2.4rem + 3.4vw, 6rem)" className="drop-shadow-[0_2px_16px_rgba(20,50,50,0.35)]" />
+          <Monogram size="clamp(2.4rem, 3.7vw, 3.9rem)" className="drop-shadow-[0_2px_16px_rgba(20,50,50,0.35)]" />
           <h1
             id="hero-title"
-            className="mt-6 font-display leading-[0.95] tracking-[-0.03em] [text-shadow:0_2px_30px_rgba(20,50,50,0.25)] sm:mt-8 sm:whitespace-nowrap"
+            className="mt-5 font-display leading-[0.95] tracking-[-0.03em] [text-shadow:0_2px_30px_rgba(20,50,50,0.25)] sm:mt-7 sm:whitespace-nowrap"
             style={{ fontSize: "clamp(3.9rem, 11.5vw, 12.5rem)" }}
           >
-            <span className="block sm:inline">Alexis</span>{" "}
+            <span className="block sm:inline">Caleb</span>{" "}
             <span className="block sm:inline">
-              <span className="font-accent italic">&amp;</span> Caleb
+              <span className="font-accent italic">&amp;</span> Alexis
             </span>
           </h1>
         </div>

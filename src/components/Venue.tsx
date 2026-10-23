@@ -21,7 +21,7 @@ function Rosette({ x, y, r = 16 }: { x: number; y: number; r?: number }) {
 /** Arched, gold-lined frame with Talavera rosettes — replaces Weddingly's baroque frame. */
 function ArchFrame() {
   return (
-    <svg viewBox="0 0 400 580" className="absolute inset-0 h-full w-full" aria-hidden="true">
+    <svg viewBox="0 0 400 580" className="paper-layer absolute inset-0 h-full w-full drop-shadow-[0_30px_50px_rgba(10,30,30,0.35)]" aria-hidden="true">
       <path d="M8 572V170C8 72 92 8 200 8s192 64 192 162v402z" fill="#fbf7f1" />
       <g fill="none" stroke="#b89b62" strokeWidth="1.3">
         <path d="M20 560V172C20 82 98 22 200 22s180 60 180 150v388z" />
@@ -50,7 +50,7 @@ export function Venue() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(20,50,52,0.28)_0%,rgba(20,50,52,0.12)_60%,rgba(20,50,52,0.25)_100%)]" />
       </div>
       <div className="flex min-h-[760px] items-center justify-center px-4 py-20 sm:min-h-[860px]">
-        <div data-reveal className="relative aspect-[400/580] w-full max-w-[400px] drop-shadow-[0_30px_50px_rgba(10,30,30,0.35)]">
+        <div data-reveal className="relative aspect-[400/580] w-full max-w-[400px]">
           <ArchFrame />
           <div className="relative flex h-full flex-col items-center justify-center px-12 pt-12 text-center">
             <p className="eyebrow !text-[12px]">Venue &amp; directions</p>

@@ -10,15 +10,19 @@ export function RevealScript() {
   useEffect(() => {
     const els = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal]:not(.is-visible)"));
     if (!("IntersectionObserver" in window)) {
-      els.forEach((el) => el.classList.add("is-visible"));
+      els.forEach((el) => el.classList.add("is-visible", "is-settled"));
       return;
     }
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) {
           if (e.isIntersecting) {
-            e.target.classList.add("is-visible");
-            io.unobserve(e.target);
+            const el = e.target as HTMLElement;
+            el.classList.add("is-visible");
+            io.unobserve(el);
+            // drop the will-change hint once the fade has finished
+            const delay = parseFloat(getComputedStyle(el).getPropertyValue("--reveal-delay")) || 0;
+            window.setTimeout(() => el.classList.add("is-settled"), 900 + delay);
           }
         }
       },

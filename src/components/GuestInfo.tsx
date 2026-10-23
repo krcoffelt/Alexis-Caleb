@@ -10,7 +10,7 @@ type Pol = { slug: string; alt: string; caption: "date" | "names" };
 
 function Polaroid({ p, className = "", sizes }: { p: Pol; className?: string; sizes: string }) {
   return (
-    <figure className={`absolute flex flex-col bg-card p-2.5 pb-0 shadow-[0_16px_34px_-10px_rgba(50,35,20,0.4)] ring-1 ring-black/5 ${className}`}>
+    <figure className={`paper-layer absolute flex flex-col bg-card p-2.5 pb-0 shadow-[0_16px_34px_-10px_rgba(50,35,20,0.4)] ring-1 ring-black/5 ${className}`}>
       <div className="relative min-h-0 flex-1 overflow-hidden">
         <Photo slug={p.slug} alt={p.alt} fill sizes={sizes} className="object-cover object-[50%_30%]" />
       </div>

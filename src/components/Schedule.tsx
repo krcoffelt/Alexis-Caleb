@@ -42,7 +42,7 @@ export function Schedule() {
                 </span>
                 <div className={`flex ${flip ? "sm:order-2 sm:justify-start" : "sm:justify-end"}`}>
                   <div
-                    className={`w-full max-w-[260px] drop-shadow-[0_12px_22px_rgba(60,40,25,0.18)] ${flip ? "rotate-[1.2deg]" : "-rotate-[1.2deg]"}`}
+                    className={`paper-layer w-full max-w-[260px] drop-shadow-[0_12px_22px_rgba(60,40,25,0.18)] ${flip ? "rotate-[1.2deg]" : "-rotate-[1.2deg]"}`}
                   >
                     <div className="torn grain bg-note p-3">
                       <div className="relative aspect-[4/5] overflow-hidden">

@@ -28,7 +28,7 @@ function useCountdown(targetIso: string) {
 
 function InvitationCard() {
   return (
-    <span className="block h-full w-full drop-shadow-[0_6px_14px_rgba(70,45,25,0.18)]">
+    <span className="paper-layer block h-full w-full drop-shadow-[0_6px_14px_rgba(70,45,25,0.18)]">
       <span className="deckle grain relative flex h-full w-full flex-col items-center bg-[#fdf9f2] px-[7%] pt-[21%] text-center text-ink [container-type:inline-size]">
         <span className="pointer-events-none absolute inset-[3.5%] border border-gold/45" />
         <span className="pointer-events-none absolute inset-[4.6%] border border-gold/25" />
@@ -136,7 +136,7 @@ export function Envelope() {
         onClick={() => setOpen((o) => !o)}
         aria-hidden="true"
         tabIndex={-1}
-        className="mt-6 flex h-10 items-center gap-2 rounded-full border border-ink/15 bg-card/70 px-4 text-[13px] font-medium text-ink-soft transition hover:border-ink/30 hover:text-ink"
+        className="mt-6 flex h-11 items-center gap-2 rounded-full bg-[linear-gradient(180deg,#5aa8a4,#3d8a88)] px-5 text-[14px] font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.35),0_2px_8px_rgba(33,64,63,0.25)] transition hover:brightness-95"
       >
         {open ? <EnvelopeSimpleIcon size={16} /> : <EnvelopeOpenIcon size={16} />}
         {open ? "Tuck it back in" : "Open your invitation"}

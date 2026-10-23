@@ -11,7 +11,8 @@ export function Story() {
     <section id="story" aria-labelledby="story-title" className="relative overflow-hidden bg-paper-2 py-24 sm:py-32">
       <TalaveraPattern className="opacity-[0.32]" />
       <div className="relative mx-auto max-w-[1100px] px-4">
-        <div data-reveal className="mx-auto max-w-[560px] drop-shadow-[0_14px_28px_rgba(60,40,25,0.16)]">
+        <div data-reveal className="mx-auto max-w-[560px]">
+        <div className="paper-layer drop-shadow-[0_14px_28px_rgba(60,40,25,0.16)]">
         <div className="grain torn bg-note px-8 py-12 text-center sm:px-14 sm:py-14">
           <p className="eyebrow">Our story</p>
           <h2 id="story-title" className="title-xl mt-4">
@@ -21,6 +22,7 @@ export function Story() {
           <p className="mx-auto mt-6 max-w-[42ch] text-[16px] leading-[1.6] font-medium tracking-[-0.01em] text-ink-soft">
             {storyIntro}
           </p>
+        </div>
         </div>
         </div>
 
@@ -33,7 +35,7 @@ export function Story() {
                 data-reveal
                 className={`relative flex flex-col items-center sm:block sm:h-[560px] ${right ? "sm:ml-auto" : ""} sm:w-[640px]`}
               >
-                <article className={`relative z-0 w-[min(320px,86vw)] rounded-[12px] bg-card p-3 shadow-[0_18px_40px_-18px_rgba(60,40,25,0.35)] sm:absolute sm:top-0 ${right ? "sm:right-[260px]" : "sm:left-0"}`}>
+                <article className={`paper-layer relative z-0 w-[min(320px,86vw)] rounded-[12px] bg-card p-3 shadow-[0_18px_40px_-18px_rgba(60,40,25,0.35)] sm:absolute sm:top-0 ${right ? "sm:right-[260px]" : "sm:left-0"}`}>
                   <header className="flex items-baseline justify-between px-1 pt-1 pb-3">
                     <h3 className="text-[22px] font-medium tracking-[-0.02em] text-ink-soft">{m.title}</h3>
                   </header>
@@ -43,7 +45,7 @@ export function Story() {
                   <p className="px-1 pt-3 pb-1 text-[15px] font-medium text-ink-mute">{m.when}</p>
                 </article>
                 <div
-                  className={`relative z-10 -mt-3 ml-10 w-[min(280px,78vw)] sm:ml-0 sm:absolute sm:mt-0 sm:top-[150px] ${right ? "sm:right-0" : "sm:left-[250px]"} ${right ? "rotate-[1.5deg]" : "-rotate-[1.5deg]"} drop-shadow-[0_10px_22px_rgba(60,40,25,0.2)]`}
+                  className={`relative z-10 mt-8 ml-10 w-[min(280px,78vw)] sm:ml-0 sm:absolute sm:mt-0 sm:top-[150px] ${right ? "sm:right-0" : "sm:left-[250px]"} ${right ? "rotate-[1.5deg]" : "-rotate-[1.5deg]"} paper-layer drop-shadow-[0_10px_22px_rgba(60,40,25,0.2)]`}
                 >
                   <WaxSeal size={68} className="absolute -top-8 left-1/2 z-10 -translate-x-1/2" />
                   <div className="grain torn bg-note px-7 pt-12 pb-9 text-center">

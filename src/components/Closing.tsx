@@ -42,8 +42,9 @@ export function RsvpInvite() {
       </div>
       <Waves flip fill="var(--color-paper)" className="relative z-10" />
       <div className="flex min-h-[600px] items-center justify-center px-4 py-20 sm:min-h-[680px]">
-        <div data-reveal className="relative w-full max-w-[640px] drop-shadow-[0_24px_40px_rgba(30,20,10,0.3)]">
+        <div data-reveal className="relative w-full max-w-[640px]">
           <WaxSeal size={84} className="absolute -top-10 left-1/2 z-10 -translate-x-1/2" />
+          <div className="paper-layer drop-shadow-[0_24px_40px_rgba(30,20,10,0.3)]">
           <div className="grain torn bg-note px-6 pt-16 pb-10 text-center sm:px-14 sm:pt-20 sm:pb-12">
             <p className="eyebrow">RSVP</p>
             <h2
@@ -64,6 +65,7 @@ export function RsvpInvite() {
                 Submit RSVP
               </Link>
             </div>
+          </div>
           </div>
         </div>
       </div>
