@@ -21,7 +21,7 @@ export default function Home() {
         <Hero />
 
         <section aria-labelledby="welcome-title" className="relative overflow-hidden pb-24 sm:pb-32">
-          <PalmShadow className="top-0 -right-24 h-[420px] w-[480px] sm:h-[600px] sm:w-[680px]" />
+          <PalmShadow className="top-[10px] -right-24 h-[420px] w-[480px] sm:h-[600px] sm:w-[680px]" />
           <PapelPicado className="-mt-1" />
           <div className="mx-auto flex max-w-[760px] flex-col items-center px-4 pt-12 text-center sm:pt-16">
             <p data-reveal className="eyebrow">

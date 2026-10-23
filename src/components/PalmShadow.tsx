@@ -60,7 +60,7 @@ export function PalmShadow({ className = "", mirror = false }: { className?: str
       style={{ transform: mirror ? "scaleX(-1)" : undefined }}
     >
       <svg viewBox="0 0 640 560" className="palm-sway h-full w-full overflow-visible">
-        <g style={{ filter: "blur(3.5px)" }} fill="#3a2a1d" stroke="#3a2a1d" strokeWidth="2.5" opacity=".11">
+        <g fill="#6b5640" stroke="#6b5640" strokeWidth="1" opacity=".05">
           {fronds.map((f, i) => (
             <path key={i} d={frondPath(f)} />
           ))}
