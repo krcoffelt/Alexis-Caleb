@@ -30,8 +30,9 @@ export const site = {
     dayPass: "$150 to $200 per day pass", // CONFIRM currency / eligibility
   },
   registry: {
-    // CONFIRM: hydrated Joy CTA. An older Honeyfund link also exists.
-    url: "https://withjoy.com/alexis-and-caleb-may-2027/registry",
+    honeyfund: "https://www.honeyfund.com/site/guillen-jardina-kish-05-12-2027",
+    // Gift registry link still TBD: set it here and the button goes live.
+    registry: null as string | null,
   },
   // Optional contact line from the visible Joy FAQ. Set to null to hide it.
   contact: { name: "Alexis", phone: "812-493-5336" } as { name: string; phone: string } | null,
@@ -123,7 +124,7 @@ export const storyQA = [
     q: "How did you two meet?",
     a: [
       "At work! Caleb took a contract in San Antonio and we were working on the same job. Caleb was head of security and I was working in the medical tent. He introduced himself and assured me if I needed anything, to reach out.",
-      "Our first conversation, I asked Caleb how he was liking TX, and his words were, “It’s hot as hell here.” (It was 101 degrees that day in May.) Then he proceeded to tell me it had just snowed a couple of days ago in Buffalo, and my first words to my cousin were, “Eww, I would hate to live there.” Joke’s on me! lol",
+      "Our first conversation, I asked Caleb how he was liking TX, and his words were, “It’s hot as hell here.” (It was 101 degrees that day in May.) Then he proceeded to tell me it had just snowed a couple of days ago in Buffalo, and my first words to my cousin were, “Eww, I would hate to live there.” Jokes on me! lol",
     ],
   },
   {

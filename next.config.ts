@@ -4,7 +4,11 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     // Hotel Xcaret México's official photos, served from its booking CDN
-    remotePatterns: [{ protocol: "https", hostname: "images.trvl-media.com", pathname: "/lodging/**" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "images.trvl-media.com", pathname: "/lodging/**" },
+      // dress-code inspiration photos (Pexels License)
+      { protocol: "https", hostname: "images.pexels.com", pathname: "/photos/**" },
+    ],
   },
   async headers() {
     return [

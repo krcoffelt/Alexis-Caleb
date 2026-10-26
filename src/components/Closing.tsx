@@ -19,15 +19,35 @@ export function Registry() {
         <p className="mt-5 max-w-[44ch] text-[16px] leading-[1.6] font-medium text-ink-soft">
           Should you wish to honor us with a gift, we have put together a registry for you to contribute.
         </p>
-        <a
-          href={site.registry.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-8 flex h-12 items-center gap-2 rounded-[12px] border border-ink/80 px-6 text-[15px] font-medium text-ink transition hover:bg-ink hover:text-white"
-        >
-          Browse our registry <ArrowUpRightIcon size={16} aria-hidden="true" />
-          <span className="sr-only">(opens our Joy registry in a new tab)</span>
-        </a>
+        <div className="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            href={site.registry.honeyfund}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gold flex h-12 w-full max-w-[240px] items-center justify-center gap-2 rounded-[12px] px-6 text-[15px] font-medium sm:w-auto"
+          >
+            Honeyfund <ArrowUpRightIcon size={16} aria-hidden="true" />
+            <span className="sr-only">(opens Honeyfund in a new tab)</span>
+          </a>
+          {site.registry.registry ? (
+            <a
+              href={site.registry.registry}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 w-full max-w-[240px] items-center justify-center gap-2 rounded-[12px] border border-ink/80 px-6 text-[15px] font-medium text-ink transition hover:bg-ink hover:text-white sm:w-auto"
+            >
+              Registry <ArrowUpRightIcon size={16} aria-hidden="true" />
+              <span className="sr-only">(opens in a new tab)</span>
+            </a>
+          ) : (
+            <span
+              aria-disabled="true"
+              className="flex h-12 w-full max-w-[240px] cursor-default items-center justify-center gap-2 rounded-[12px] border border-dashed border-ink/30 px-6 text-[15px] font-medium text-ink-mute sm:w-auto"
+            >
+              Registry · coming soon
+            </span>
+          )}
+        </div>
       </div>
     </section>
   );

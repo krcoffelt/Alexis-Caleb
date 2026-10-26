@@ -1,4 +1,5 @@
 import { ClosingBanner, Footer, Registry, RsvpInvite } from "@/components/Closing";
+import { DressCode } from "@/components/DressCode";
 import { Envelope } from "@/components/Envelope";
 import { PalmShadow } from "@/components/PalmShadow";
 import { PapelPicado } from "@/components/PapelPicado";
@@ -10,7 +11,6 @@ import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
 import { Schedule } from "@/components/Schedule";
 import { Story } from "@/components/Story";
-import { Venue } from "@/components/Venue";
 import { site } from "@/content/site";
 
 export default function Home() {
@@ -59,7 +59,7 @@ export default function Home() {
 
         <Story />
         <Schedule />
-        <Venue />
+        <DressCode />
         <GuestInfo />
         <SeaInterlude />
         <Gallery />

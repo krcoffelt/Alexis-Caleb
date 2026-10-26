@@ -2,7 +2,7 @@ import { Flourish } from "./Ornament";
 import { site } from "@/content/site";
 import { Photo } from "./Photo";
 import type { Icon } from "@phosphor-icons/react";
-import { AirplaneTiltIcon, BedIcon, CoatHangerIcon, WalletIcon } from "@phosphor-icons/react/dist/ssr";
+import { AirplaneTiltIcon, BedIcon, MapPinIcon, WalletIcon } from "@phosphor-icons/react/dist/ssr";
 import { PalmShadow } from "./PalmShadow";
 import { WaxSeal } from "./WaxSeal";
 
@@ -105,27 +105,16 @@ const rows: Row[] = [
             </div>
           ))}
         </dl>
-      </>
-    ),
-  },
-  {
-    eyebrow: "Dress code",
-    title: "What to wear",
-    icon: CoatHangerIcon,
-    photos: [
-      { slug: "arch-embrace", alt: "Alexis and Caleb embracing against a stone wall", caption: "names" },
-      { slug: "field-kiss", alt: "A kiss in a field of wildflowers", caption: "date" },
-    ],
-    body: (
-      <>
-        <p>
-          <strong className="font-semibold text-ink">Funky formal</strong> for the ladies and{" "}
-          <strong className="font-semibold text-ink">beach formal</strong> for the guys.
-        </p>
-        <p>
-          The ceremony and reception will be outdoors, weather permitting, and there may be some uneven ground, so please
-          leave the stilettos at home and go for block heels or sandals instead.
-        </p>
+        <a
+          href={site.venue.mapUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-1 inline-flex h-11 items-center gap-1.5 text-[14px] font-medium text-ink underline decoration-gold underline-offset-4 hover:text-clay"
+        >
+          <MapPinIcon size={16} aria-hidden="true" />
+          Directions to {site.venue.name}
+          <span className="sr-only"> (opens Google Maps in a new tab)</span>
+        </a>
       </>
     ),
   },
