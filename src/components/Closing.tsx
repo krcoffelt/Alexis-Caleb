@@ -136,6 +136,17 @@ export function Footer() {
         </nav>
         <div className="mt-12 h-px w-full max-w-[420px] bg-[#f2e9dd]/15" />
         <p className="mt-6 text-[12px] text-[#f2e9dd]/55">Photography by {site.photographer}</p>
+        <p className="mt-2 text-[12px] text-[#f2e9dd]/55">
+          Website created by{" "}
+          <a
+            href="https://hometownkc.agency"
+            target="_blank"
+            rel="noopener"
+            className="underline decoration-[#f2e9dd]/30 underline-offset-2 transition-colors hover:text-[#f2e9dd] hover:decoration-[#f2e9dd]/70"
+          >
+            Hometown Marketing Agency<span className="sr-only"> (opens in a new tab)</span>
+          </a>
+        </p>
       </div>
     </footer>
   );
