@@ -2,7 +2,7 @@ import Link from "next/link";
 import { site } from "@/content/site";
 import { Monogram } from "./Monogram";
 import { TalaveraPattern } from "./TalaveraPattern";
-import { Waves } from "./Waves";
+import { Waves, waveMask } from "./Waves";
 import { Photo } from "./Photo";
 import { ArrowUpRightIcon, GiftIcon } from "@phosphor-icons/react/dist/ssr";
 import { WaxSeal } from "./WaxSeal";
@@ -13,7 +13,7 @@ export function Registry() {
       <div data-reveal className="mx-auto flex max-w-[620px] flex-col items-center px-4 text-center">
         <WaxSeal size={64} seed={11} icon={GiftIcon} />
         <p className="eyebrow mt-6">Registry</p>
-        <h2 id="registry-title" className="mt-4 font-display text-[clamp(1.75rem,1.2rem+2vw,2.375rem)] leading-[1.2] tracking-[-0.015em] text-ink">
+        <h2 id="registry-title" className="mt-4 font-heading text-[clamp(1.75rem,1.2rem+2vw,2.3rem)] leading-[1.25] text-ink">
           The greatest gift of all is having you celebrate with us.
         </h2>
         <p className="mt-5 max-w-[44ch] text-[16px] leading-[1.6] font-medium text-ink-soft">
@@ -56,11 +56,11 @@ export function Registry() {
 export function RsvpInvite() {
   return (
     <section aria-labelledby="rsvp-invite-title" className="relative isolate overflow-hidden">
-      <div className="absolute inset-x-0 top-[3px] bottom-[3px] -z-10">
+      <div className="absolute inset-0 -z-10" style={waveMask({ top: true, bottom: true })}>
         <Photo slug="tulum-palms" alt="" fill sizes="100vw" className="object-cover object-[50%_55%] [filter:saturate(.92)_brightness(.97)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(23,52,52,0.22)_0%,rgba(23,52,52,0.05)_70%)]" />
       </div>
-      <Waves flip fill="var(--color-paper)" className="relative z-10" />
+      <Waves flip className="relative z-10" />
       <div className="flex min-h-[600px] items-center justify-center px-4 py-20 sm:min-h-[680px]">
         <div data-reveal className="relative w-full max-w-[640px]">
           <WaxSeal size={84} className="absolute -top-10 left-1/2 z-10 -translate-x-1/2" />
@@ -69,7 +69,7 @@ export function RsvpInvite() {
             <p className="eyebrow">RSVP</p>
             <h2
               id="rsvp-invite-title"
-              className="mx-auto mt-4 max-w-[22ch] font-display text-[clamp(1.5rem,1.1rem+1.6vw,2rem)] leading-[1.25] tracking-[-0.015em] text-ink"
+              className="mx-auto mt-4 max-w-[24ch] font-heading text-[clamp(1.5rem,1.1rem+1.6vw,2rem)] leading-[1.3] text-ink"
             >
               Please Confirm Your Attendance. We Can’t Wait To Celebrate With You.
             </h2>
@@ -89,7 +89,7 @@ export function RsvpInvite() {
           </div>
         </div>
       </div>
-      <Waves fill="var(--color-lagoon)" className="relative z-10" />
+      <Waves className="relative z-10" />
     </section>
   );
 }
@@ -139,7 +139,7 @@ export function Footer() {
         <nav aria-label="Footer" className="mt-8">
           <ul className="flex flex-wrap justify-center gap-x-2 gap-y-1 text-[14px] font-medium">
             {[
-              { href: "/our-story", label: "Our Story" },
+              { href: "/#story", label: "Our Story" },
               { href: "/#celebration", label: "Celebration" },
               { href: "/#stay", label: "Stay & Travel" },
               { href: "/#questions", label: "Q&A" },

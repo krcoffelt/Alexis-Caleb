@@ -4,6 +4,7 @@ import { Envelope } from "@/components/Envelope";
 import { PalmShadow } from "@/components/PalmShadow";
 import { PapelPicado } from "@/components/PapelPicado";
 import { SeaInterlude } from "@/components/SeaInterlude";
+import { SiteWater } from "@/components/SiteWater";
 import { Faq } from "@/components/Faq";
 import { Gallery } from "@/components/Gallery";
 import { GuestInfo } from "@/components/GuestInfo";
@@ -16,6 +17,7 @@ import { site } from "@/content/site";
 export default function Home() {
   return (
     <>
+      <SiteWater />
       <Nav />
       <main id="main">
         <Hero />
@@ -30,7 +32,7 @@ export default function Home() {
             <h2
               id="welcome-title"
               data-reveal
-              className="mt-5 font-display text-[clamp(1.75rem,1.15rem+2.4vw,2.625rem)] leading-[1.22] tracking-[-0.015em] text-ink"
+              className="mt-5 font-heading text-[clamp(1.75rem,1.15rem+2.4vw,2.5rem)] leading-[1.25] text-ink"
             >
               We’re so excited to celebrate our big day with you in Mexico!
             </h2>

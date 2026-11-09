@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { Monogram } from "./Monogram";
 
 const links = [
-  { href: "/our-story", label: "Our Story" },
+  { href: "/#story", label: "Our Story" },
   { href: "/#stay", label: "Stay & Travel" },
   { href: "/#questions", label: "Q&A" },
 ];

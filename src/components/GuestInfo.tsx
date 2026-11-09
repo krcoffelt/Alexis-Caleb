@@ -96,15 +96,10 @@ const rows: Row[] = [
         <p>
           We recommend flying into <strong className="font-semibold text-ink">Cancún International Airport (CUN)</strong>.
         </p>
-        <p>Complimentary round-trip airport transportation is provided for all resort guests:</p>
-        <dl className="mt-1 divide-y divide-gold/30 border-y border-gold/30 text-[15px]">
-          {["May 7", "May 14"].map((d) => (
-            <div key={d} className="flex items-center justify-between py-2.5">
-              <dt className="font-semibold text-ink">{d}</dt>
-              <dd>6:00 AM to 11:00 PM</dd>
-            </div>
-          ))}
-        </dl>
+        <p>
+          <strong className="font-semibold text-ink">Complimentary round-trip airport transportation</strong> is provided
+          for all resort guests. Pickups and drop-offs are scheduled around your flights when you book your stay.
+        </p>
         <a
           href={site.venue.mapUrl}
           target="_blank"

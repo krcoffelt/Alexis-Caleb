@@ -98,7 +98,7 @@ export function RsvpForm() {
     return (
       <div ref={resultRef} tabIndex={-1} role="status" className="text-center outline-none">
         <p className="eyebrow">RSVP received</p>
-        <h2 className="mt-4 font-display text-[30px] leading-tight text-ink">
+        <h2 className="mt-4 font-heading text-[30px] leading-tight text-ink">
           {attending === "yes" ? `See you in Mexico, ${submittedName}!` : `We’ll miss you, ${submittedName}.`}
         </h2>
         <p className="mx-auto mt-4 max-w-[34ch] text-[16px] leading-[1.6] font-medium text-ink-soft">

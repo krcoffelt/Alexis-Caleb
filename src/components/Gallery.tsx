@@ -38,7 +38,7 @@ export function Gallery() {
   }, [index, step]);
 
   return (
-    <section id="photos" aria-labelledby="photos-title" className="bg-paper-2 py-24 sm:py-32">
+    <section id="photos" aria-labelledby="photos-title" className="py-24 sm:py-32">
       <div className="mx-auto max-w-[1200px] px-4">
         <header data-reveal className="text-center">
           <p className="eyebrow">Moments</p>

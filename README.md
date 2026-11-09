@@ -1,6 +1,6 @@
 # Alexis & Caleb — wedding website
 
-Next.js 15 + Tailwind 4 + TypeScript, deployed on Netlify with Netlify Forms for RSVPs. Layout follows the
+Next.js 15 + Tailwind 4 + TypeScript, deployed on Netlify. Fonts match the couple's Joy theme (Cinzel Decorative, Spectral, Quattrocento) with Netlify Forms for RSVPs. Layout follows the
 bride-selected Weddingly (Olivia & Daniel) rhythm, recolored to one warm
 palette (sand + clay + gold linework) with sea-glass from the hero water.
 
@@ -16,9 +16,10 @@ still need the couple's sign-off.
 
 ## Routes
 
-- `/` — hero (ocean video + CA), save-the-date envelope, story, schedule, venue,
-  guest info, photos, registry, RSVP invite, Q&A
-- `/our-story` — full story Q&A
+- `/` — hero (ocean video + CA), save-the-date envelope, full story Q&A, schedule,
+  dress code, guest info, shoreline band, photos, registry, RSVP invite, Q&A.
+  The hero water also runs behind the whole page (`SiteWater`) under an ivory wash.
+- `/our-story` — redirects to `/#story`
 - `/rsvp` — one step: Yes/No, number of guests (if Yes), full name, phone/WhatsApp
 
 ## RSVPs (Netlify Forms)

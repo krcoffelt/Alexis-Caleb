@@ -100,7 +100,7 @@ function LookCard({ look, index }: { look: Look; index: number }) {
 
 export function DressCode() {
   return (
-    <section id="dress-code" aria-labelledby="dress-title" className="relative overflow-hidden bg-paper-2 py-24 sm:py-32">
+    <section id="dress-code" aria-labelledby="dress-title" className="relative overflow-hidden py-24 sm:py-32">
       <div className="mx-auto max-w-[1120px] px-4">
         <header data-reveal className="text-center">
           <p className="eyebrow">Dress code</p>

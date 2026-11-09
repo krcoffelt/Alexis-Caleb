@@ -1,13 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Bodoni_Moda, Instrument_Serif, Inter, Lustria, Pinyon_Script, Reem_Kufi } from "next/font/google";
+import { Cinzel_Decorative, Pinyon_Script, Quattrocento, Reem_Kufi, Spectral } from "next/font/google";
 import { RevealScript } from "@/components/Reveal";
 import { site } from "@/content/site";
 import "./globals.css";
 
-const lustria = Lustria({ weight: "400", subsets: ["latin"], variable: "--font-lustria", display: "swap" });
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const instrument = Instrument_Serif({ weight: "400", style: ["normal", "italic"], subsets: ["latin"], variable: "--font-instrument", display: "swap" });
-const bodoni = Bodoni_Moda({ subsets: ["latin"], variable: "--font-bodoni", display: "swap", axes: ["opsz"] });
+// The couple's Joy theme fonts: Cinzel Decorative titles, Spectral text, Quattrocento details.
+const cinzel = Cinzel_Decorative({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-cinzel", display: "swap" });
+const spectral = Spectral({
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-spectral",
+  display: "swap",
+});
+const quattrocento = Quattrocento({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-quattro", display: "swap" });
 const reem = Reem_Kufi({ subsets: ["latin"], variable: "--font-reem", display: "swap" });
 const pinyon = Pinyon_Script({ weight: "400", subsets: ["latin"], variable: "--font-pinyon", display: "swap" });
 
@@ -27,7 +33,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#f6f0e8" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const fonts = [lustria, inter, instrument, bodoni, reem, pinyon].map((f) => f.variable).join(" ");
+  const fonts = [cinzel, spectral, quattrocento, reem, pinyon].map((f) => f.variable).join(" ");
   return (
     <html lang="en" className={fonts} suppressHydrationWarning>
       <body>

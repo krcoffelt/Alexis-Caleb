@@ -24,10 +24,11 @@
   --color-sea-deep: #21403f;
   --color-lagoon: #e3ece7;
 
-  --font-display: var(--font-lustria), Georgia, serif;
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-accent: var(--font-instrument), Georgia, serif;
-  --font-mono-ca: var(--font-bodoni), Didot, serif;
+  /* Joy theme: Cinzel Decorative titles, Quattrocento headings/details, Spectral text */
+  --font-display: var(--font-cinzel), Georgia, serif;
+  --font-heading: var(--font-quattro), Georgia, serif;
+  --font-sans: var(--font-spectral), Georgia, serif;
+  --font-accent: var(--font-spectral), Georgia, serif;
   --font-kufi: var(--font-reem), system-ui, sans-serif;
   --font-script: var(--font-pinyon), cursive;
 
@@ -75,10 +76,10 @@ body {
 
 .title-xl {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 1.3rem + 2.6vw, 2.625rem);
-  line-height: 1.15;
-  letter-spacing: -0.015em;
-  text-transform: uppercase;
+  /* mixed case: Cinzel sets lowercase as small capitals, like the Joy site */
+  font-size: clamp(2rem, 1.3rem + 2.4vw, 2.6rem);
+  line-height: 1.18;
+  letter-spacing: 0.01em;
   color: var(--color-ink);
 }
 
@@ -222,27 +223,6 @@ body {
     transform: rotate(1.4deg) translateX(8px);
   }
 }
-.water-light {
-  position: absolute;
-  inset: -15%;
-  pointer-events: none;
-  background-image: url("/media/ocean-poster.jpg");
-  background-size: cover;
-  filter: grayscale(1) contrast(1.6) brightness(1.25);
-  mix-blend-mode: soft-light;
-  opacity: 0.55;
-  will-change: transform;
-  animation: water-light 40s ease-in-out infinite alternate;
-}
-@keyframes water-light {
-  from {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  to {
-    transform: translate3d(-6%, -4%, 0) scale(1.08);
-  }
-}
-
 /* Reveal-on-scroll (progressive: content is visible without JS) */
 .js [data-reveal] {
   opacity: 0;

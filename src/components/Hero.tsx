@@ -30,7 +30,7 @@ export function Hero() {
           >
             <span className="block sm:inline">Caleb</span>{" "}
             <span className="block sm:inline">
-              <span className="font-accent italic">&amp;</span> Alexis
+              &amp; Alexis
             </span>
           </h1>
         </div>

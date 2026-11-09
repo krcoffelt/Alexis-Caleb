@@ -2,13 +2,13 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr";
 import { site } from "@/content/site";
 import { LoopVideo } from "./LoopVideo";
-import { Waves } from "./Waves";
+import { Waves, waveMask } from "./Waves";
 
 /** Full-bleed aerial shoreline band: the tropical breath between logistics and photos. */
 export function SeaInterlude() {
   return (
     <section aria-labelledby="sea-title" className="relative isolate overflow-hidden text-white">
-      <div className="absolute inset-x-0 top-[3px] bottom-[3px] -z-10 bg-sea-deep">
+      <div className="absolute inset-0 -z-10 bg-sea-deep" style={waveMask({ top: true, bottom: true })}>
         <LoopVideo
           src={site.shorelineVideo.src}
           poster={site.shorelineVideo.poster}
@@ -17,7 +17,7 @@ export function SeaInterlude() {
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(23,52,52,0.5)_0%,rgba(23,52,52,0.28)_45%,rgba(23,52,52,0)_75%)]" />
       </div>
 
-      <Waves flip fill="var(--color-paper)" className="relative z-10" />
+      <Waves flip className="relative z-10" />
 
       <div className="mx-auto flex min-h-[520px] max-w-[1200px] items-center px-6 py-16 sm:min-h-[620px] sm:px-10">
         <div data-reveal className="max-w-[520px]">
@@ -40,7 +40,7 @@ export function SeaInterlude() {
         </div>
       </div>
 
-      <Waves fill="var(--color-paper-2)" className="relative z-10" />
+      <Waves className="relative z-10" />
     </section>
   );
 }

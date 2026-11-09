@@ -9,8 +9,7 @@ export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
   const base = useId();
   return (
-    <section id="questions" aria-labelledby="faq-title" className="relative isolate overflow-hidden bg-lagoon py-24 sm:py-32">
-      <div aria-hidden="true" className="water-light -z-10" />
+    <section id="questions" aria-labelledby="faq-title" className="relative isolate overflow-hidden py-24 sm:py-32">
       <div className="relative mx-auto max-w-[640px] px-4">
         <header data-reveal className="text-center">
           <p className="eyebrow">Frequently asked questions</p>

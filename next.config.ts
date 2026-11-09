@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.pexels.com", pathname: "/photos/**" },
     ],
   },
+  async redirects() {
+    // the full story now lives on the home page
+    return [{ source: "/our-story", destination: "/#story", permanent: false }];
+  },
   async headers() {
     return [
       {
